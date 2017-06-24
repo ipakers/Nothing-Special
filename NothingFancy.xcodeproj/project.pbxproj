@@ -18,6 +18,7 @@
 		EF88EA821EFE72BF001F7A09 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EF88EA741EFE7194001F7A09 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EF88EA9F1EFE74AF001F7A09 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF88EA921EFE749E001F7A09 /* SwiftyJSON.framework */; };
 		EF88EAA01EFE74AF001F7A09 /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EF88EA921EFE749E001F7A09 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EF88EAA61EFE75C5001F7A09 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF88EAA51EFE75C5001F7A09 /* Service.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -180,6 +181,7 @@
 		EF700ACA1EFCD54F005B12C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF88EA681EFE7194001F7A09 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 		EF88EA861EFE749E001F7A09 /* SwiftyJSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftyJSON.xcodeproj; path = SwiftyJSON/SwiftyJSON.xcodeproj; sourceTree = "<group>"; };
+		EF88EAA51EFE75C5001F7A09 /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,12 +236,9 @@
 		EF700AA71EFCD54F005B12C7 /* NothingFancy */ = {
 			isa = PBXGroup;
 			children = (
-				EF700AA81EFCD54F005B12C7 /* AppDelegate.swift */,
+				EF88EAA41EFE75B2001F7A09 /* Service */,
+				EF88EAA31EFE7599001F7A09 /* App */,
 				EF700AAA1EFCD54F005B12C7 /* ViewController.swift */,
-				EF700AAC1EFCD54F005B12C7 /* Main.storyboard */,
-				EF700AAF1EFCD54F005B12C7 /* Assets.xcassets */,
-				EF700AB11EFCD54F005B12C7 /* LaunchScreen.storyboard */,
-				EF700AB41EFCD54F005B12C7 /* Info.plist */,
 			);
 			path = NothingFancy;
 			sourceTree = "<group>";
@@ -288,6 +287,26 @@
 				EF88EA9E1EFE749E001F7A09 /* SwiftyJSON tvOS Tests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		EF88EAA31EFE7599001F7A09 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				EF700AA81EFCD54F005B12C7 /* AppDelegate.swift */,
+				EF700AAC1EFCD54F005B12C7 /* Main.storyboard */,
+				EF700AB11EFCD54F005B12C7 /* LaunchScreen.storyboard */,
+				EF700AB41EFCD54F005B12C7 /* Info.plist */,
+				EF700AAF1EFCD54F005B12C7 /* Assets.xcassets */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		EF88EAA41EFE75B2001F7A09 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				EF88EAA51EFE75C5001F7A09 /* Service.swift */,
+			);
+			name = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -543,6 +562,7 @@
 			files = (
 				EF700AAB1EFCD54F005B12C7 /* ViewController.swift in Sources */,
 				EF700AA91EFCD54F005B12C7 /* AppDelegate.swift in Sources */,
+				EF88EAA61EFE75C5001F7A09 /* Service.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
